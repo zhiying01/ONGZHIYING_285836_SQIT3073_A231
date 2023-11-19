@@ -25,7 +25,7 @@ while True:
 
     elif option == 3:
         # Modify DSR threshold
-        hlc.modify_dsr_threshold()
+        hlc.modify_dsr_threshold(loan_calculations)
 
     elif option == 4:
         # Delete previous calculations
