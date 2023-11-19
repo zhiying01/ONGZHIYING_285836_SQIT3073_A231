@@ -3,7 +3,7 @@ import housing_loan_calculator as hlc
 loan_calculations = []
 
 while True:
-    print("\nWelcome to the Housing Loan Calculator")
+    print("Welcome to the Housing Loan Calculator")
     print("---------------------------------------")
     print("Please select an option:")
     print("1. Calculate new loan")

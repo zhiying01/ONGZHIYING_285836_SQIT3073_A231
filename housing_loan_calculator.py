@@ -44,9 +44,9 @@ def calculate_new_loan():
 
     # Display results
     print("---------------------------------------")
-    print("Monthly instalment: RM",str(round(['monthly_instalment'],2)))
-    print("Total payment over loan term:", total_payment)
-    print("Debt Service Ratio (DSR):", debt_service_ratio)
+    print("Monthly instalment: RM {:.2f}".format(monthly_instalment))
+    print("Total payment over loan term RM {:.2f}:".format(total_payment))
+    print("Debt Service Ratio (DSR) {:.2f}:".format(debt_service_ratio),"%")
 
     if eligible:
         print("You are eligible for the loan.")
