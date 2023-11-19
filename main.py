@@ -16,7 +16,7 @@ while True:
 
     if option == 1:
         # Calculate new loan
-        loan_calculations.append(hlc.calculate_new_loan())
+        loan_calculations.append(hlc.calculate_new_loan(loan_calculations))
         print("Loan calculation successfully added.")
 
     elif option == 2:
