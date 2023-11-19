@@ -44,7 +44,7 @@ def calculate_new_loan():
 
     # Display results
     print("---------------------------------------")
-    print("Monthly instalment:", monthly_instalment)
+    print("Monthly instalment: RM",str(round(['monthly_instalment'],2)))
     print("Total payment over loan term:", total_payment)
     print("Debt Service Ratio (DSR):", debt_service_ratio)
 
@@ -76,7 +76,6 @@ def view_previous_calculations(loan_calculations):
     print("Previous Loan Calculations:")
     print("---------------------------------------")
     for calculation in loan_calculations:
-        print("Loan ID:", calculation['loan_id'])
         print("Principal Amount:", calculation['principal_amount'])
         print("Annual Interest Rate:", calculation['annual_interest_rate'])
         print("Loan Term (Years):", calculation['loan_term_years'])
@@ -94,7 +93,7 @@ def modify_dsr_threshold():
     current_dsr_threshold = dsr_threshold
     new_dsr_threshold = validate_input(input(f"Current DSR threshold is {current_dsr_threshold}. Enter a new threshold (percentage): "), float)
 
-    if new_dsr_threshold != current_dsr_threshold:
+    if new_dsr_threshold != current_dsr_threshold: #edit the new dsr
         dsr_threshold = new_dsr_threshold
         print(f"DSR threshold successfully updated to {new_dsr_threshold}.")
     else:
@@ -108,7 +107,6 @@ def delete_previous_calculations(loan_calculations):
     print("Delete Previous Calculations:")
     print("---------------------------------------")
     for i, calculation in enumerate(loan_calculations):
-        print(f"Loan ID: {calculation['loan_id']}")
         print("Principal Amount:", calculation['principal_amount'])
         print("Annual Interest Rate:", calculation['annual_interest_rate'])
         print("Loan Term (Years):", calculation['loan_term_years'])
