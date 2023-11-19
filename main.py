@@ -29,7 +29,7 @@ while True:
 
     elif option == 4:
         # Delete previous calculations
-        hlc.delete_previous_calculations(loan_calculations)
+        hlc.delete_specific_loan_calculation(loan_calculations)
 
     elif option == 5:
         # Exit
